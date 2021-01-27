@@ -21,7 +21,7 @@ namespace FunctionApp1
                 //Map FormLetter message to LetterEntity type and save to table storage
                 await letterTableCollector.AddAsync(new LetterEntity(formLetter));
 
-                logger.LogInformation("--------------Letter Queue updated.--------------");
+                logger.LogInformation("--------------Letter Table updated.--------------");
             }
             catch (Exception e)
             {
